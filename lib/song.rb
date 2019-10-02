@@ -22,8 +22,8 @@ class Song
     artist_piece = parts[0]
     song_name = parts[1].gsub(".mp3", "")
     #Pending artist_name=() completion
-    self.new(song_name)
-
+    new_song = self.new(song_name)
+    new_song.artist_name = artist_piece
     #Pending artist_name=() completion
   end
 
