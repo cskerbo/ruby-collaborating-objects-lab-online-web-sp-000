@@ -19,11 +19,11 @@ class Song
 
   def self.new_by_filename(filename)
     parts = filename.split(" - ")
-    artist_name = parts[0]
+    artist_piece = parts[0]
     song_name = parts[1].gsub(".mp3", "")
     #Pending artist_name=() completion
     self.new(song_name)
-    self.artist_name=(artist_name)
+    self.artist_name(artist_piece)
     #Pending artist_name=() completion
   end
 
